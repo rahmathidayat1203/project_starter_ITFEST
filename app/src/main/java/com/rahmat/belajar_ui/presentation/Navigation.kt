@@ -10,24 +10,6 @@ import com.rahmat.belajar_ui.ui.registration.RegisterScreen
 
 @Composable
 fun Navigation() {
-    val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = "login") {
-        composable("login") {
-            LoginScreen(
-                onNavigateToRegister = { navController.navigate("register") },
-                onLoginSuccess = { navController.navigate("home") }
-            )
-        }
+    // TODO
 
-        composable("register") {
-            RegisterScreen(
-                onRegistrationSuccess = { navController.navigate("login") }
-            )
-        }
-        composable("home") {
-            HomeScreen(
-                onLogout = { navController.navigate("login") { popUpTo("home") { inclusive = true } } }
-            )
-        }
-    }
 }

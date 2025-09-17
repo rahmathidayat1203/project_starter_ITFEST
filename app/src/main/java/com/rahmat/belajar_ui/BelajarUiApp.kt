@@ -5,5 +5,5 @@ import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class BelajarUiApp : Application() {
-    // You can add any application-wide initialization here
+
 }

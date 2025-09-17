@@ -13,17 +13,14 @@ import kotlinx.coroutines.delay
 @AndroidEntryPoint
 class SplashActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            Belajar_uiTheme {
-                SplashScreen()
-            }
-
-            LaunchedEffect(key1 = true) {
-                delay(3000) // Delay for 3 seconds
-                startActivity(Intent(this@SplashActivity, MainActivity::class.java))
-                finish()
-            }
-        }
+         super.onCreate(savedInstanceState)
+         setContent {
+             Belajar_uiTheme {
+                 // TODO
+             }
+             // TODO
+         }
     }
+    
+
 }
